@@ -1153,9 +1153,9 @@ img {
   transition: -webkit-transform var(--animation);
   transition: transform var(--animation);
   transition: transform var(--animation), -webkit-transform var(--animation);
-  
   padding-left: 24px;
   padding-right: 24px;
+  padding-top: 50px;
   background-color: rgba(33, 150, 243, 0.9);
 }
 
@@ -1164,7 +1164,6 @@ img {
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 @media screen and (max-width: 340px) {
   .overlays__desc {
