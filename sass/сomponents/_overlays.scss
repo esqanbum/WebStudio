@@ -2,7 +2,7 @@
 
 .overlays {
   position: absolute;
-  top: 0;
+  
   left: 0;
 
   transform: translateY(100%);
@@ -14,9 +14,11 @@
   text-align: center;
   justify-content: center;
   transition: transform var(--animation);
- 
+
+  padding-top: 50px;
   padding-left: 24px;
     padding-right: 24px;
+   
   background-color: rgba(33, 150, 243, 0.9);
 }
 
