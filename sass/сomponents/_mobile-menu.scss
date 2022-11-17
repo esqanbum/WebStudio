@@ -1,0 +1,166 @@
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__icon {
+    fill: #000000;
+
+    .menu-btn:hover &,
+    .menu-btn:focus & {
+      fill: var(--accent-bgr-cl);
+    }
+  }
+
+  &--positioning {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 48px 40px;
+
+  background-color: var(--light-txt-cl);
+
+  transform: translateX(100%);
+  transition: transform var(--animation);
+
+  overflow: auto;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+}
+
+.mobile-nav {
+  margin-bottom: auto;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--main-txt-cl);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-bgr-cl);
+    }
+
+    &--current {
+      color: var(--accent-bgr-cl);
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.mobile-contacts {
+  list-style: none;
+  margin-bottom: 64px;
+
+  &__link {
+    @media screen and (max-width: 410px) {
+      font-size: 26px;
+    }
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+    color: var(--accent-bgr-cl);
+
+    &--mail {
+      font-size: 24px;
+      line-height: calc(28 / 24);
+      color: var(--secondary-txt-cl);
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.mobile-socials {
+  list-style: none;
+
+  @media screen and (max-width: 436px) {
+    display: flex;
+    flex-direction: column;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: var(--accent-bgr-cl);
+  }
+
+  &__link {
+    &::after {
+      @media screen and (max-width: 436px) {
+        display: none;
+      }
+      position: absolute;
+
+      content: '';
+      top: 0;
+      right: -10px;
+      display: block;
+      width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+
+    &--not_after {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

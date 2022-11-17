@@ -1,0 +1,27 @@
+:root {
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Texts colors */
+  --main-txt-cl: #212121;
+  --secondary-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+  --logo-txt-cl: #000000;
+  --link-txt-cl: rgba(255, 255, 255, 0.6);
+
+  /* Background colors */
+  --accent-bgr-cl: #2196f3;
+  --btn-active-cl: #188ce8;
+  --grey-bgr-cl: #f5f4fa;
+  --footer-bgr-cl: #2f303a;
+  --main-bgr-cl: #f5f5f5;
+  --hero-bgr-cl: #2f303a;
+  --icons-fill: #afb1b8;
+  /* Others */
+  --items: 3;
+  --item: 2;
+  --indent: 30px;
+
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

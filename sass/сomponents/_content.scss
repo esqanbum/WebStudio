@@ -1,0 +1,109 @@
+.content {
+  background-color: var(--light-txt-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.container-content {
+  display: block;
+}
+
+.content__items {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: start;
+  list-style: none;
+
+  @media screen and (max-width: 767px) {
+    max-width: 326px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.content__list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
+.content__button {
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  color: var(--main-txt-cl);
+  background-color: var(--grey-bgr-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--light-txt-cl);
+    background-color: var(--accent-bgr-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+.content__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  width: 100%;
+}
+
+.content__file {
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
+  display: flex;
+  transition: box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .overlays {
+    transform: translateY(0);
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   --items: 2;
+  //   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  // }
+}
+
+.content__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}

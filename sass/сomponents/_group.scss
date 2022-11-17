@@ -1,0 +1,20 @@
+.group {
+  padding-bottom: 94px;
+  display: block;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.group__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+.group__list {
+  gap: 30px;
+  display: flex;
+  list-style: none;
+}

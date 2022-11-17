@@ -1,0 +1,159 @@
+.register-form__title {
+  margin-bottom: 12px;
+
+  display: block;
+  text-align: center;
+
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.register-group {
+  margin-bottom: 20px;
+}
+
+.register-group__label {
+  position: relative;
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+.register-group__title {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-txt-cl);
+}
+
+.register-group__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 36px;
+  padding-right: 36px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: transparent;
+  transition: border-color var(--animation) fill var(--animation);
+
+  &:focus,
+  &:hover {
+    border-color: var(--accent-bgr-cl);
+  }
+
+  &:hover + .register-group__icon {
+    fill: var(--accent-bgr-cl);
+  }
+
+  &:focus + .register-group__icon {
+    fill: var(--accent-bgr-cl);
+  }
+}
+
+.register-group__icon {
+  fill: currentColor;
+  position: absolute;
+  top: 38px;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill var(--animation);
+}
+
+.register-field__desc {
+  width: 100%;
+  height: 122px;
+  padding: 16px 12px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: transparent;
+  resize: none;
+  transition: border-color var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-bgr-cl);
+  }
+}
+
+.register-terms {
+  gap: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.register-terms__icon--checked {
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+
+.register-terms__input:checked + .register-terms__icon .register-terms__icon--checked {
+  opacity: 1;
+}
+
+.register-terms__icon--unchecked {
+  opacity: 1;
+  transition: opacity var(--animation);
+}
+.register-terms__input:checked + .register-terms__icon .register-terms__icon--unchecked {
+  opacity: 0;
+}
+
+.register-terms__link {
+  color: var(--accent-bgr-cl);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.register-terms__title {
+  user-select: none;
+  color: var(--secondary-txt-cl);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.register-btn {
+  display: block;
+  padding: 10px 52px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  background-color: var(--accent-bgr-cl);
+  color: var(--light-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    background: var(--btn-active-cl);
+  }
+}

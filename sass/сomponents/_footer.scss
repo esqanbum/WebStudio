@@ -1,0 +1,232 @@
+.footer {
+  background-color: var(--footer-bgr-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    gap: 114px;
+  }
+}
+
+.footer-content {
+  gap: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+
+.footer-main {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer-main__logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--light-txt-cl);
+  text-decoration: none;
+}
+.footer-main__logo span {
+  color: var(--accent-bgr-cl);
+}
+
+.footer-main__address {
+  font-style: normal;
+}
+
+.footer-main__list {
+  list-style: none;
+}
+
+.footer-main__item {
+  list-style: none;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-main__link {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--light-txt-cl);
+}
+
+.footer-main__link--contact {
+  color: var(--link-txt-cl);
+  text-decoration: none;
+
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-bgr-cl);
+  }
+}
+
+/* Socials */
+
+.footer-socials {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer-socials__title {
+  color: var(--light-txt-cl);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-socials__list {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.footer-socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--light-txt-cl);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-bgr-cl);
+  }
+}
+
+.footer-socials__icon {
+  fill: currentColor;
+}
+
+/* Form */
+
+.footer-form {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.footer-form__label {
+  display: block;
+  font-weight: 700;
+  color: var(--light-txt-cl);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-container__input {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 15px 16px 15px 16px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
+
+.footer-container__input:placeholder-shown {
+  padding: 16px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 28px;
+  gap: 10px;
+
+  margin: 0 auto;
+  border: none;
+
+  border-radius: 4px;
+  background-color: var(--accent-bgr-cl);
+  color: var(--light-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    background: var(--btn-active-cl);
+  }
+}
+
+.footer-btn__icon {
+  fill: var(--light-txt-cl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
