@@ -125,17 +125,21 @@
 
   @media screen and (max-width: 436px) {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+  
   }
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 
+   
+
+
   &__link {
     position: relative;
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
     color: var(--accent-bgr-cl);
