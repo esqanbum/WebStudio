@@ -88,6 +88,15 @@
   }
 }
 
+.register-field__title{
+  display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: .01em;
+    color: var(--secondary-txt-cl);
+}
+
 .register-terms {
   gap: 7px;
   display: flex;
