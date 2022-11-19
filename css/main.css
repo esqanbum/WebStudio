@@ -125,6 +125,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    font-size: 12px;
   }
 }
 
@@ -419,6 +420,7 @@ img {
 .features__title {
   margin-bottom: 10px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -524,10 +526,18 @@ img {
 }
 
 .team__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
@@ -1051,12 +1061,6 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .content__list {
-    margin-bottom: 15px;
-  }
-}
-
 .content__button {
   padding-top: 6px;
   padding-left: 22px;
@@ -1398,6 +1402,11 @@ img {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 767px) {
+  .register-terms__link {
+    font-size: 12px;
+  }
+}
 
 .register-terms__title {
   -webkit-user-select: none;
@@ -1409,6 +1418,11 @@ img {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 767px) {
+  .register-terms__title {
+    font-size: 12px;
+  }
 }
 
 .register-btn {

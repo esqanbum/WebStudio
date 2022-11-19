@@ -120,6 +120,9 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
 }
 
 .register-terms__title {
@@ -129,6 +132,9 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+      font-size: 12px;
+    }
 }
 
 .register-btn {
